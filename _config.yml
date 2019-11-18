@@ -10,7 +10,7 @@ url: "https://ehdrms2034.github.io" # the base hostname & protocol for your site
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
+banner-title: 600g 의 개발 블로그 # add banner title
 banner-desc: # add banner description
 
 # Author settings
