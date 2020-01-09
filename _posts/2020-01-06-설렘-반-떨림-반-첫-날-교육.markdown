@@ -26,8 +26,7 @@ tag: [Smilegate,서버개발캠프,일상,포부]
 
 P.S) 서버개발캠프 일정은 4시에 끝이나는데, 저녁을 먹기위해서라도 앉아서 더 개발을 하게 된다 ㄷㄷ
 
-<img src="https://raw.githubusercontent.com/ehdrms2034/ehdrms2034.github.io/master/assets/img/20200106lunch.jpg"
-width="600px"/><br/>
+![](20200106lunch.jpg)
 
 #### PM 1:00 ~ 4:00
 기본적으로 서버 언어에 대한 설명을 팀장님께서 해주셨다. 첫 날 수업이라 이미 다 알법한 내용이긴 했지만, **강의력이 진짜 ㄷㄷㄷ**
@@ -39,8 +38,7 @@ width="600px"/><br/>
 서버캠프의 일정은 4시에서 끝났다. 하지만 처음이고 전체적인 분위기도 살필겸해서 계속적으로 개발을 했다. 수업에 설명해줬던 것을 정리 한 번 쓰윽하고 개인 과제가 나왔는데, 개인 과제를 -스근하게(?)- 수월하게 했다.
 
 #### PM 6:00 ~ 7:00
-<img src="https://raw.githubusercontent.com/ehdrms2034/ehdrms2034.github.io/master/assets/img/20200106dinner.jpg"
-width="600px"/><br/>
+![](20200106dinner.jpg)
 저녁시간, 역시나 너무 맛있음 ㅠㅠ 밥이 너무 맛있으니 키야~ 이맛에 개발 하지요~~
 
 #### PM 7:00 ~ 8:00
