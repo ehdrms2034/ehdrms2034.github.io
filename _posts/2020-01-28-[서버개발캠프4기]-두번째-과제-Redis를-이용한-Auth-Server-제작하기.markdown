@@ -1,0 +1,46 @@
+---
+layout: post
+title: "[서버 개발 캠프 4기] 첫번째 과제 Short Url 코드 리뷰 후기"
+img: default.png # Add image post (optional)
+date: 2020-01-28 22:50:00 +0900
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+tag: [Smilegate,서버개발캠프,일상,포부]
+---
+# [서버개발캠프 4기] 2번째 과제 Auth Server 제작하기
+서버개발캠프 2주차 과제는 Auth Server를 제작하는 것이다.
+조건은 다음과 같다.
+
+1. RDBMS를 사용할 것 (ex : Mysql, Postgresql)
+2. 이메일 인증을 넣을 것
+3. 캐시 서버를 사용할 것 (Redis)
+4. 관리자 페이지를 제작할 것
+5. 비밀번호 찾기가 들어갈 것
+6. Password Encryption 할 것 
+7. 로그인 및 회원가입 기능 들어갈 것
+
+프로젝트 규모가 꽤 커서, 중요한 부분만 설명하고 가겠다!
+나머지는 Github 홈페이지에 올라와있으니 확인하도록!
+아래는 링크 주소 :
+[GitHub - ehdrms2034/AuthServer-with-Node-Mysql-Redis-JWT](https://github.com/ehdrms2034/AuthServer-with-Node-Mysql-Redis-JWT)
+
+## 프로젝트 설계 하기 - 비밀번호 암호화
+Auth Server를 만드는데 있어 가장 중요한 것은 바로 비밀번호를 어떻게 잘 관리하느냐 일 것이다.  그 이유는 서버가 해커의 공격으로 뚫린다 하더라도 2차, 3차적인 피해를 예방할 수 있냐를 결정 지을 것이 바로 비밀번호의 암호화이기 때문이다.
+
+### PBKDF2 (With Sha-256) 알고리즘 기법을 사용
+그래서 나는 사용자의 비밀번호를 관리하기 위해 **pbkdf2 암호화**를 적용하였다
+pbkdf를 간략하게 설명하자면 평문을 Sha-1,Sha-256등 여러 암호화 기법들을 1번만 암호화 하는것이 아니라 임의의 횟수대로 반복하여 해쉬 값을 생성하는 것이다.
+
+그러나 Hash 값을 그대로 비밀번호에 저장하기에는 문제점이 발생한다.
+변환된 해쉬는 본래의 평문과 1:1 대응 한다.
+이말이 무슨 말이냐면, asdf 를 해쉬 알고리즘을 이용해서 h1h2h3라는 해쉬 값을 얻었다고 한다면 이 asdf는 h1h2h3 이외에는 다른 해쉬값을 얻을 수 없다는 것이다.
+
+그렇다면 존재하는 모든 값들을 해쉬값으로 저장해둔 테이블이 있다면? 해쉬값으로 변환해둔 값들을 저장해둔 테이블을 바로 **레인보우 테이블** 이라고 하고, 이것이 바로 Hash를 이용한 단방향 암호화의 보안 취약성이다.
+
+그렇다면 이 취약성을 해결할 방법은 없을까?
+
+### Salting 기법을 사용하여 비밀번호를 암호화
+Salting 기법은 말그대로 소금을 친다는 것이다. Hash Function으로 추출된 값은 원래의 평문과 1:1 대응 관계였다고 했나?
+
+그렇다면 기존의 평문에 Salt값이라고 불려지는 값들과 같이 암호화를 한다면, 같은 암호값이라도 매번 암호화 되는 값이 다르기 때문에 **레인보우 테이블 공격**을 쉽게 막을 수 있다.
+
+… 현재 작성중…
