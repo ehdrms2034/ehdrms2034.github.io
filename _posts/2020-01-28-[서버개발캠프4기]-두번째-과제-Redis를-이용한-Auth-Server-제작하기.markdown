@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[서버 개발 캠프 4기] 첫번째 과제 Short Url 코드 리뷰 후기"
+title: "[서버 개발 캠프 4기] 두번째 과제 Redis를 이용한 Auth Server 제작하기"
 img: default.png # Add image post (optional)
 date: 2020-01-28 22:50:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
