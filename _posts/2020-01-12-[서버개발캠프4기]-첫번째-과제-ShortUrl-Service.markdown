@@ -4,7 +4,7 @@ title: "[서버 개발 캠프 4기] 첫번째 과제 ShortUrl Service, 단축 UR
 img: 202001/20200112shorturl.png # Add image post (optional)
 date: 2020-01-12 23:12:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-tag: [Smilegate,서버개발캠프,일상,포부]
+tag: [Smilegate,서버개발캠프]
 ---
 ## [서버개발캠프4기] 첫번째 과제 ShortUrl Service ,단축 URL 제공 서비스
 서버 개발 캠프를 진행한지 일주일이 지났다.

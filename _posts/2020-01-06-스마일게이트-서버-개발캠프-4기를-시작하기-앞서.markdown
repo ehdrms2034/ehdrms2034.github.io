@@ -4,7 +4,7 @@ title: "스마일게이트 서버 개발 캠프 4기를 시작하기 앞서"
 img: 20200106-IMGsmilegate.png # Add image post (optional)
 date: 2020-01-06 01:38:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-tag: [Smilegate,서버개발캠프,일상,포부]
+tag: [Smilegate,서버개발캠프]
 ---
 ## 스마일게이트 서버개발캠프 4기를 시작하기 앞서
 사실 이번 2020년 겨울에 스마일게이트에서 주관하는 서버개발캠프 4기에 지원하여 참가하게 되었다. 
