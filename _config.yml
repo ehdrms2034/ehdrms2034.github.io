@@ -1,58 +1,86 @@
-logo: 600g의 개발 블로그 # add logo name
-title: 600g's Main Blog
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ehdrms2034.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# Site settings
+title:       600g의 개발 블로그
+email:       403.forbidden@kakao.com
+author:      600g
+description: "이왕이면 최고가 되자..! 한다면 하는 남자 대한민국 대표 한남 600g입니다."
+baseurl:     ""
+url:         "https://ehdrms2034.github.io"
+date_format: "%b %-d, %Y"
+header_pages:
+ - about.md
+ - contact.html
 
-# Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: 600g 의 개발 블로그 # add banner title
-banner-desc: # add banner description
+google_analytics: UA-736961-2
 
-# Author settings
-author-pic: face.jpg # your photo
-author-name: 600g (Kim Dong Geun) # your name
-about-author: 이왕 태어난 거 Top 한 번 찍어봐야지. 한다면 하는 남자 대한민국 대표 한남 600g입니다. # about author
-email: 403.forbidden@kakao.com # your email
-phone: 010-xxxx-xxxx # your pnone number
-website: https://instagram.com/east_600g # you website
+# Optional features
+animated:             true
+show_related_posts:   true
+show_post_footers:    false
+show_social_icons:    true
 
-# Social link
-google_url:    # add url link
-twitter_url:   # add url link
-instagram_url: # add url link
-pinterest_url: # add url link
-dribbble_url:  # add url link
-facebook_url:  # add url link
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: false
 
-# Disqus
-discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+# Disqus post comments
+disqus_shortname:
 
-# Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+# Social icons
+github_username: ehdrms2034
+twitter_username: 
+linkedin_username: 
 
-# Tracker
-analytics: UA-736961-2
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: true
+share_linkedin: true
+share_digg: true
+share_tumblr: true
+share_reddit: true
+share_stumbleupon: true
+share_hackernews: true
 
-# Paginate
-paginate: 12
-paginate_path: /page:num/
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share:'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+    post_footer:    'Lorem ipsum'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'en_KR'
 
 # Build settings
-markdown: kramdown
-plugins_dir:
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    :title
+paginate:     5
+sass:
+  style: compressed
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-theme: jekyll-theme-cayman
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - vendor

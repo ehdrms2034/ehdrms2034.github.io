@@ -1,9 +1,17 @@
-
-<footer class="main_footer">
-  <div class="wrapper">
-    {% include social_footer.html %}
-    <div class="copyright">
-      <p>&copy; {{site.time | date: '%Y'}} All rights reserved. Design by <a href="https://artemsheludko.github.io" target="_blank">Artem Sheludko</a></p>
+<footer class="center">
+  <div class="measure">
+    <div class="left">
+      <small>
+        &copy; {{ site.time | date:"%Y" }} {{ site.title }}
+      </small>
     </div>
+    {% if site.show_social_icons %}
+      {% include social_links.html %}
+    {% endif %}
   </div>
-</footer> <!-- End Section Footer -->
+</footer>
+<script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
+    }
+</script>

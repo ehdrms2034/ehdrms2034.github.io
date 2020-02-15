@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ehdrms2034.github.io/sitemap.xml
