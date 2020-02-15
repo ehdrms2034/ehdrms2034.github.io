@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "[서버 개발 캠프 4기] 두번째 과제 Redis를 이용한 Auth Server 제작하기"
+title: "[서버 개발 캠프 4기] Redis를 이용한 Auth Server 제작하기"
 img: default.png # Add image post (optional)
 date: 2020-01-28 22:50:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Smilegate,서버개발캠프]
 ---
-# [서버개발캠프 4기] 2번째 과제 Auth Server 제작하기
+#### [서버개발캠프 4기] 2번째 과제 Auth Server 제작하기
 서버개발캠프 2주차 과제는 Auth Server를 제작하는 것이다.
 조건은 다음과 같다.
 

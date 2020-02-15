@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "[서버 개발 캠프 4기] 첫번째 과제 Short Url 코드 리뷰 후기"
+title: "[서버 개발 캠프 4기] Short Url 코드 리뷰 후기"
 img: 202001/20200112shorturl.png # Add image post (optional)
 date: 2020-01-16 22:12:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Smilegate,서버개발캠프]
 ---
-# [서버개발캠프 4기] 첫번째 과제 Short Url 코드 리뷰 후기
+#### [서버개발캠프 4기] 첫번째 과제 Short Url 코드 리뷰 후기
 일단 결론을 말하자면 말아먹었다.
 Node를 사용하였다 -> 망했다.
 MongoDB를 사용하였다 -> 망했다.
