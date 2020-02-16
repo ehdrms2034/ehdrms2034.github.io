@@ -10,6 +10,7 @@ tag: [Jmeter,성능테스트,서버]
 
 ###  Apache Jmeter란…
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYJkbicw3sb1sfnbxYUXb3EJKZiWNtVvnncWrruaZySt4awi07)
+<br/>
 서버가 제공하는 서비스에 대한 성능을 측정하고 사용자에게 보여주는 테스트 도구라고 할 수 있습니다.
 
 간단하게 말하자면… 
@@ -43,11 +44,13 @@ open /usr/local/bin/jmeter
 ### 플러그인 설치
 
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter1.png?raw=true)
+<br/>
 실행을 하면 다음과 같은 화면을 볼 수 있을 것이다.
 
 
 만약 저처럼 jmeter만 설치한 사람들을 위해서 플러그인을 설치하고 가겠다.
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter2.png?raw=true)
+<br/>
 Option -> Plugin Manager를 들어가면 위 스크린샷과 같은 화면을 볼 수 있는데
 Available Plugins에 들어가서 우리가 설치할 플러그인은 다음과 같다.
 1. 3Basic Graphs
@@ -56,9 +59,11 @@ Available Plugins에 들어가서 우리가 설치할 플러그인은 다음과 
 ### 간단한 사용법
 간단하게 알아볼 실험은 서버에 http요청에 부하를 줘 보겠다.
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter3.png?raw=true)
+<br/>
 Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter4.png?raw=true)
+<br/>
 다음은 ThreadGroup을 우클릭하여 다음 항목을 추가 시켜준다.
 1. ThreadGroup(우클릭) -> Add -> Sampler -> Http Request을 눌러준다.
 2. ThreadGroup(우클릭) -> Add -> Listener -> View Results Tree
@@ -70,28 +75,31 @@ Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter5.png?raw=true)
 다음과 같은 화면을 볼 수 있을 것이다
 각 항목에 대해 설명을 하자면 
-**Number of Threads(users)**
-가상의 생성자를 몇 명으로 설정할건지에 대한 값이다. (= 몇 개의 쓰레드를 생성할 것인지의 값이다)
+**Number of Threads(users)**<br/>
+가상의 생성자를 몇 명으로 설정할건지에 대한 값이다. (= 몇 개의 쓰레드를 생성할 것인지의 값이다)<br/>
+이 값이 커질수록 당연히 서버는 많은 부하를 받을 것이다.<br/>
 
-이 값이 커질수록 당연히 서버는 많은 부하를 받을 것이다.
+**Ramp-up Period(in seconds)**<br/>
+한번의 실행을 몇초 동안 완료 시킬것인지에 대한 설정값<br/>
+<br/>
 
-**Ramp-up Period(in seconds)**
-한번의 실행을 몇초 동안 완료 시킬것인지에 대한 설정값
-
-**Loop Count**
-반복하고자 하는 횟수, Infinite를 누르면 무제한 실행.
+**Loop Count**<br/>
+반복하고자 하는 횟수, Infinite를 누르면 무제한 실행.<br/>
  
 #### 다음은 Http Request를 눌러주자..!
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter6.png?raw=true)
+<br/>
 어떤 Url에 부하를 줄건지 설정한다.
 자신의 서버값에 맞춰 설정하도록 하자..!!
 
 #### start button을 누르면 다음과 같은 결과값들이 기록된다.
 
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter7.png?raw=true)
+<br/>
 Summary Report
 
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter8.png?raw=true)
+<br/>
 Transaction per second
 
 50명의 동시 사용자에 대해 localhost:3000 url은 15000-20000의 tps를 처리할 수 있다는 결과값을 얻게 됐다.
