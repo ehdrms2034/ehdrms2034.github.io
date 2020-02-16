@@ -75,6 +75,8 @@ Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 ![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter5.png?raw=true)
 다음과 같은 화면을 볼 수 있을 것이다
 각 항목에 대해 설명을 하자면 
+<br/>
+
 **Number of Threads(users)**<br/>
 가상의 생성자를 몇 명으로 설정할건지에 대한 값이다. (= 몇 개의 쓰레드를 생성할 것인지의 값이다)<br/>
 이 값이 커질수록 당연히 서버는 많은 부하를 받을 것이다.<br/>
