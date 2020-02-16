@@ -42,12 +42,12 @@ open /usr/local/bin/jmeter
 
 ### 플러그인 설치
 
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.42.43.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter1.png?raw=true)
 실행을 하면 다음과 같은 화면을 볼 수 있을 것이다.
 
 
 만약 저처럼 jmeter만 설치한 사람들을 위해서 플러그인을 설치하고 가겠다.
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.44.28.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter2.png?raw=true)
 Option -> Plugin Manager를 들어가면 위 스크린샷과 같은 화면을 볼 수 있는데
 Available Plugins에 들어가서 우리가 설치할 플러그인은 다음과 같다.
 1. 3Basic Graphs
@@ -55,10 +55,10 @@ Available Plugins에 들어가서 우리가 설치할 플러그인은 다음과 
 
 ### 간단한 사용법
 간단하게 알아볼 실험은 서버에 http요청에 부하를 줘 보겠다.
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.48.11.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter3.png?raw=true)
 Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.48.42.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter4.png?raw=true)
 다음은 ThreadGroup을 우클릭하여 다음 항목을 추가 시켜준다.
 1. ThreadGroup(우클릭) -> Add -> Sampler -> Http Request을 눌러준다.
 2. ThreadGroup(우클릭) -> Add -> Listener -> View Results Tree
@@ -67,7 +67,7 @@ Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 를 추가 시켜준다.
 
 #### 전부 추가시켜줬다면 ThreadGroup을 눌러주자..!
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.50.15.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter5.png?raw=true)
 다음과 같은 화면을 볼 수 있을 것이다
 각 항목에 대해 설명을 하자면 
 **Number of Threads(users)**
@@ -82,16 +82,16 @@ Test Plan(우클릭) -> Add -> ThreadsGroup 을 눌러 추가시켜준다.
 반복하고자 하는 횟수, Infinite를 누르면 무제한 실행.
  
 #### 다음은 Http Request를 눌러주자..!
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.50.02.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter6.png?raw=true)
 어떤 Url에 부하를 줄건지 설정한다.
 자신의 서버값에 맞춰 설정하도록 하자..!!
 
 #### start button을 누르면 다음과 같은 결과값들이 기록된다.
 
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.50.53.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter7.png?raw=true)
 Summary Report
 
-![](%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-02-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.50.46.png)
+![](https://github.com/ehdrms2034/ehdrms2034.github.io/blob/master/assets/img/202002/2020-02-12-jmeter8.png?raw=true)
 Transaction per second
 
 50명의 동시 사용자에 대해 localhost:3000 url은 15000-20000의 tps를 처리할 수 있다는 결과값을 얻게 됐다.
