@@ -6,7 +6,6 @@ date: 2020-02-06 23:20:00 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Smilegate,서버개발캠프]
 ---
-### [서버 개발캠프 4기] 2번째 과제 Auth server 제작하기 - 2
 ### 저번이야기…
 저번에 비밀번호를 어떻게 DB에 저장하고, 암호화를 하는지 언급을 했다. 또한 토큰을 어떻게 사용하여 사용자 인증을 가지는지에 대해서 이야기를 했다. 간략하게 이야기 하자면 다음과 같다.  
 #
