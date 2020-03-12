@@ -6,7 +6,7 @@ date: 2020-03-12 16:50:10 +0900
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [서버개발캠프,스마일게이트]
 ---
-## [서버개발캠프 4기] 스마일게이트 서버개발캠프 4기를 마치고…
+**[서버개발캠프 4기] 스마일게이트 서버개발캠프 4기를 마치고…**
 오늘은 2달간의 서버개발캠프 후기를 적어보려고 한다. 
 끝나고 2~3주만에 적는거긴하지만 좋은 경험을 해왔던 만큼 후기로써 남기고 싶다. ㅎ 
  
