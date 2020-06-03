@@ -1,0 +1,11 @@
+---
+layout: post
+title: "블로그 이전했습니다!"
+img: default.png # Add image post (optional)
+date: 2020-03-12 16:50:10 +0900
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+tag: []
+---
+## 블로그 이전했습니다.
+블로그를 깃허브 지킬 에서 velog로 이사 했습니다.
+[벨로그로 가기!](http://velog.io/@ehdrms2034)
